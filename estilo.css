@@ -80,10 +80,11 @@ body{
     text-align: center;
 }
 
-#secao_01{
+#secao_01, #secao_02{
     display: flex;
     width: 70%;
     margin: auto;
+    margin-top: 80px;
 }
 #criancas_secao_01{
     background-image: url('imagens/criancas2.jpg');
@@ -100,4 +101,19 @@ body{
 
 #conteudo_secao_01 h1{
     font-size: 40px;
+}
+
+
+#criancas_secao_02{
+    width: 60%;
+    height: 350px;
+    background-image: url('/imagens/criancas3.jpg');
+    background-size: cover;
+    border-radius: 40px 0px 0px 40px;
+}
+
+#conteudo_secao_02{
+    background-color: var(--verde_limao);
+    width: 40%;
+    border-radius: 0px 40px 40px 0px;
 }
