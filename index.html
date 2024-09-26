@@ -8,8 +8,18 @@
 </head>
 <body>
     <div id="container">
+
+        <div id="menu_lateral">
+            <h1 onclick="fecharMenu()"> x </h1>
+            <div class="item_menu menu_ativado"> Home </div>
+            <div class="item_menu"> Serviços </div>
+            <div class="item_menu"> Sobre nós </div>
+            <div class="item_menu"> Nosso Time </div>
+            <div class="item_menu"> Contato </div>
+        </div>
+
         <div id="menu_mobile_tablet">
-            <i class="fi fi-sr-menu-burger"></i>
+            <i class="fi fi-sr-menu-burger" onclick="abrirMenu()"></i>
         </div>
 
         <div id="menu_topo">
@@ -84,5 +94,21 @@
         </div> <!-- Fim do rodape -->  
 
     </div><!--Fim do container-->
+
+    <script>
+        function abrirMenu(){
+            var minhaDiv = document.getElementById("menu_lateral");
+            minhaDiv.classList.add("aparecer");
+        }
+
+        function fecharMenu(){
+            var minhaDiv = document.getElementById("menu_lateral");
+            minhaDiv.classList.remove("aparecer");
+        }
+    </script>
+
+
+
+
 </body>
 </html>

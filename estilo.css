@@ -176,7 +176,7 @@ body{
     text-decoration: none;
 }
 #menu_mobile_tablet{
-    background-color: red;
+    background-color: var(--azul_claro);
     height: 70px;
     display: none;
     align-items: center;
@@ -185,6 +185,41 @@ body{
     font-size: 30px;
     color: var(--branco);
 }
+
+#menu_lateral{
+    background-color: var(--azul_claro);
+    width: 250px;
+    margin-left: -400px;
+    height: 100vh;
+    position: fixed;
+    box-shadow: 2px 0px 20px black;
+    transition: all 0.7s;
+}
+
+.aparecer{
+    margin-left: 0px !important;
+}
+
+#menu_lateral h1{
+    font-family: Arial;
+    color: var(--branco);
+    width: 25px;
+    margin-left: 200px;
+}
+#menu_lateral h1:hover{
+    cursor: pointer;
+}
+
+#menu_lateral .item_menu{
+    color: var(--branco);
+    width: 100px;
+    justify-content: center;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+
+
 /* Configuração para Smartphones */
 @media screen and (max-width: 480px){
     #menu_mobile_tablet{
@@ -202,4 +237,16 @@ body{
     #menu_topo{
         display: none;
     }
+    #mensagem{
+        padding: 20px;
+        width: 60%;
+        height: 250px;
+    }
+    #mensagem h1{
+        font-size: 40px;
+    }
+    #mensagem p{
+        font-size: 25px;
+    }
+
 }
